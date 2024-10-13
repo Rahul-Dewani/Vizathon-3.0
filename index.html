@@ -10,6 +10,16 @@
     gtag("js", new Date());
     gtag("config", "UA-154962788-1");
   </script>
+  <script>
+    window.addEventListener('load', function() {
+    // Check if the current location hash is not '#home'
+    if (window.location.hash !== '#home') {
+        // Set the hash to '#home' to navigate to the home section
+        window.location.hash = '#home';
+    }
+});
+
+</script>
   <title>VizAThon3.0</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -48,23 +58,25 @@
     </button>
     <a class="navbar-brand" href="/">
       <span class="logo">
-        <img class="light-logo" src="./assets/img/AISA-DARK.png" alt="Logo"/>
+        <img class="light-logo" src="./assets/img/AISA-DARK.png" alt="Logo" />
       </span>
       <style>
         /* Set height and width for the logo in desktop view */
-.light-logo {
-  height: 100px; /* Adjust the height as per your requirement */
-  width: auto; /* Maintain aspect ratio by setting width to auto */
-}
+        .light-logo {
+          height: 100px;
+          /* Adjust the height as per your requirement */
+          width: auto;
+          /* Maintain aspect ratio by setting width to auto */
+        }
 
-/* Ensure default size in mobile view */
-@media (max-width: 768px) {
-  .light-logo {
-    height: auto;
-    width: 100%; /* Or set specific mobile size if needed */
-  }
-}
-
+        /* Ensure default size in mobile view */
+        @media (max-width: 768px) {
+          .light-logo {
+            height: auto;
+            width: 100%;
+            /* Or set specific mobile size if needed */
+          }
+        }
       </style>
     </a>
     <div class="all-menu-wrapper" id="navbarMenu">
@@ -169,28 +181,29 @@
       <div class="section-wrapper center-vh dir-col">
         <div class="section-content anim mt-80">
           <div class="title-desc">
-            <img class="logo" style="width: 215px; height: 60px; margin-top: -40px; border: 1px solid white;" src="./assets/img/vizlogov1.png" alt="Event Logo" />
+            <img class="logo" style="width: 215px; height: 60px; margin-top: -40px; border: 1px solid white;"
+              src="./assets/img/vizlogov1.png" alt="Event Logo" />
             <div class="event">
               <h4 class="date">21th - 24th January 2024</h4>
-              <h1 class="name" style="font-size: rem; font-weight: bold; position: relative; display: inline-block; font-size:clamp(50px,8vw,80px)">
+              <h1 class="name"
+                style="font-size: rem; font-weight: bold; position: relative; display: inline-block; font-size:clamp(50px,8vw,80px)">
                 VIZ-A-THON <span class="highlight" style="color: #ff6347;">3.0</span>
               </h1>
               <style>
-                
-
                 @media screen {
-                  .light-logo{
+                  .light-logo {
                     height: 180px;
                     width: 70px;
                   }
-                  
+
                 }
+
                 @media screen {
-                  .title-desc{
+                  .title-desc {
                     margin-top: 50px;
                   }
                 }
-                
+
 
                 /* 3 animated sublines */
                 .name::after,
@@ -260,7 +273,8 @@
             </div>
             <div class="sponsor">
               <p class="text" style="margin: -10px;">Event sponsored by</p>
-              <img class="logo" src="./assets/img/nxt2.jpg" alt="Sponsor Logo" style="height: 145px; width: 145px; margin-bottom: -15px; margin-top: 15px;"/>
+              <img class="logo" src="./assets/img/nxt2.jpg" alt="Sponsor Logo"
+                style="height: 145px; width: 145px; margin-bottom: -15px; margin-top: 15px;" />
             </div>
             <div class="text">
               <h4 class="anim-2">Embark on a visual journey with Dataviz</h4>
@@ -269,7 +283,7 @@
           </div>
           <div class="col-12 justify-content-center title-desc">
             <a href="https://hackwith.codechefvit.com" target="_blank">
-              <button id="devfolio-apply-now" >Register Now</button>
+              <button id="devfolio-apply-now">Register Now</button>
             </a>
           </div>
         </div>
@@ -298,24 +312,30 @@
           </div> -->
       </div>
     </div>
+    
+
+
+
     </div>
 
     <div class="section section-description fp-auto-height-responsive sec2 fp-section anim" data-section="about"
       data-anchor="about">
       <div class="section-wrapper fullwidth center-vh dir-col anim">
         <div class="section-title text-center">
-          <h2 class="display-2 pb-1 display-title anim-2">
-            About<span style="color: rgb(0, 179, 255)"> Viz-A-Thon 3.O</span>
+          <h2 class="display-2 pb-1 display-title anim-2" style="white-space: nowrap;">
+            About<span style="color: rgb(0, 179, 255)"> Viz-A-Thon 3.0</span>
           </h2>
         </div>
 
         <div class="section-content reduced anim text-center">
-          <div class="title-desc anim-3">
+          <div class="title-desc anim-3" style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 10px;">
             <p class="hover-effect" style="
                         display: flex;
                         justify-content: center;
+                        text-align: justify;
                         transition: transform 0.3s, color 0.3s;
-                    ">
+                        max-width: 1000px;
+                        ">
               Vizathon, a three-hour offline hackathon, tasks participants with cleaning and analyzing provided datasets
               using tools like Tableau and Power BI. The challenge lies in crafting insightful visualizations from
               cleaned data. With a prize pool exceeding 50k rupees, participants clean, analyze, and present their
@@ -331,14 +351,14 @@
                         justify-content: center;
                         color: rgb(0, 179, 255);
                         transition: transform 0.3s, color 0.3s;
-                    ">
+                        ">
               Where?
             </h3>
             <p class="hover-effect" style="
                         display: flex;
                         justify-content: center;
                         transition: transform 0.3s, color 0.3s;
-                    ">
+                        ">
               D Building VIIT, Pune
             </p>
 
@@ -347,15 +367,15 @@
                         display: flex;
                         justify-content: center;
                         transition: transform 0.3s, color 0.3s;
-                    ">
+                        ">
               When?
             </h3>
             <p class="hover-effect" style="
                         display: flex;
                         justify-content: center;
                         transition: transform 0.3s, color 0.3s;
-                    ">
-              21th October to 25th October, 2024
+                        ">
+              21st October to 25th October, 2024
             </p>
           </div>
         </div>
@@ -384,6 +404,7 @@
           }
         </style>
       </div>
+
     </div>
 
     <!--<div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
@@ -539,19 +560,19 @@
         </div>
       </div>
     </div>
-  
+
     <div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
-    data-section="timeline" data-anchor="timeline">
+      data-section="timeline" data-anchor="timeline">
       <div class="anim-2">
         <h2 class="display-1 display-title text-center">Rules</h2>
       </div>
       <div class="card" style="
-      z-index: 1;
+       z-index: 1;
       width: 90%;
       height: auto;
       border-radius: 9px;
       border: solid 1px #202222;
-      background: radial-gradient(circle 280px at 0% 0%, #444444, #0c0d0d);
+      background: radial-gradient(circle 280px at 0% 0%, rgba(68, 68, 68, 0.4), rgba(12, 13, 13, 0.4));
       display: flex;
       align-items: center;
       justify-content: center;
@@ -561,32 +582,113 @@
       font-family: 'Arial', sans-serif;
       margin:auto;
       margin-top: 1rem;
+      margin-bottom: 18px;
   ">
-<div class="text" style="
+        <div class="text" style="
           font-weight: bold;
           font-size: 1.5rem; 
           color: white; 
           text-align: left; 
           padding: 22px; 
       ">
-      
-      <!-- <h3 style="color: white;">Viz-A-Thon 3.O Rules:</h3> -->
-      <ul style="
+
+          <!-- <h3 style="color: white;">Viz-A-Thon 3.O Rules:</h3> -->
+          <ul style="
                   list-style-type: disc;
                   padding-left: 25px; 
                   margin: 0; 
               ">
-        <li style="list-style: decimal;"> There will be 2 rounds of the competition: an offline coding round followed by a presentation
-          round.</li>
-        <li style="list-style: decimal;"> Teams shortlisted from the first round must present their solutions to a panel of judges.</li>
-        <li style="list-style: decimal;" > Only Undergraduate students are eligible to participate.</li>
-        <li style="list-style: decimal;"> Team size should be 3-4 members strictly.</li>
-        <li style="list-style: decimal;"> It is mandatory for the team leader to have a Twitter/LinkedIn account.</li>
-    </ul>
-    </div></div>
+            <li style="list-style: decimal;"> There will be 2 rounds of the competition: an offline coding round
+              followed by a presentation
+              round.</li>
+            <li style="list-style: decimal;"> Teams shortlisted from the first round must present their solutions to a
+              panel of judges.</li>
+            <li style="list-style: decimal;"> Only Undergraduate students are eligible to participate.</li>
+            <li style="list-style: decimal;"> Team size should be 3-4 members strictly.</li>
+            <li style="list-style: decimal;"> It is mandatory for the team leader to have a Twitter/LinkedIn account.
+            </li>
+          </ul>
+        </div>
+      </div>
+<button class="cssbuttons-io-button">
+ Register Here
+  <div class="icon">
+    <svg
+      height="24"
+      width="24"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </div>
+</button>
+<style>
+.cssbuttons-io-button {
+  background: #4478d8;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  margin: 0 auto; /* This centers the button horizontally */
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+
+
+</style>
     </div>
 
-    
+
     <div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
       data-section="sponsors" data-anchor="sponsors">
       <div class="section-wrapper center-vh dir-col anim">
@@ -615,7 +717,7 @@
                 </div>
               </div>
             </div>
-            
+
 
           </div>
           <a href="/assets/Brochure.pdf" download>
@@ -796,48 +898,49 @@
                 </button>
               </div>
               <div class="contactcards">
-              <div class="col-12 col-md-5 m-2 text-center">
-                <div class="prizecard-1 contactcard">
-                <h4 class="text-blue">Contact</h4>
-                <div>
-                <p class="mb-0">
-                  Tanush Lichade :<a href="tel:+919322492293">+91 9322492293</a>
-                </p>
-                <p class="mb-0">
-                  Pranay Dabhade :<a href="tel:+918605957962">+91 8605957962</a>
-                </p>
-                <p class="mb-0">
-                  Email :
-                  <a href="mailto:aisa@viit.ac.in">aisa@viit.ac.in</a>
-                </p>
-              </div>
-              </div>
-              </div>
-              <div class="col-12 col-md-5 m-2 text-center">
-                <div>
+                <div class="col-12 col-md-5 m-2 text-center">
                   <div class="prizecard-1 contactcard">
-                <h4 class="text-blue">Address</h4>
-                <div><p>
-                  AiSA VIIT Pune <br />
-                  Kondhwa BK, Pune- 411048<br />
-                  Maharashtra, India
-                </p>
+                    <h4 class="text-blue">Contact</h4>
+                    <div>
+                      <p class="mb-0">
+                        Tanush Lichade :<a href="tel:+919322492293">+91 9322492293</a>
+                      </p>
+                      <p class="mb-0">
+                        Pranay Dabhade :<a href="tel:+918605957962">+91 8605957962</a>
+                      </p>
+                      <p class="mb-0">
+                        Email :
+                        <a href="mailto:aisa@viit.ac.in">aisa@viit.ac.in</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-5 m-2 text-center">
+                  <div>
+                    <div class="prizecard-1 contactcard">
+                      <h4 class="text-blue">Address</h4>
+                      <div>
+                        <p> 
+                          AiSA VIIT Pune <br />
+                          Kondhwa BK, Pune- 411048<br />
+                          Maharashtra, India
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <br />
             </div>
-          </div>
-              </div>
-            </div>
-            <br />
           </div>
         </div>
       </div>
-    </div>
   </main>
 
   <footer id="site-footer" class="page-footer">
     <div class="footer-left">
       <p>
-         <span style="color: #f00; font-weight: 700"></span>
+        <span style="color: #f00; font-weight: 700"></span>
         <a href="https://www.aisa-viit.com/" target="_blank">
           <span class="marked">AiSA-VIIT</span>
         </a>
