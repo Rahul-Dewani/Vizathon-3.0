@@ -3845,8 +3845,14 @@ a:hover {
 @media only screen and (max-width: 600px) {
   .contactcard {
     width: 100%; /* Full width on mobile screens */
-    margin-bottom: -30px; /* Add space between cards */
+    margin-bottom: -65px; /* Add space between cards */
     max-height: none; /* Allow height to grow naturally */
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .rule {
+    font-size: 1.3rem;
   }
 }
 
