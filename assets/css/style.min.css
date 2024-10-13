@@ -987,7 +987,7 @@ p {
   background-image: url(../img/cryp.png), url(../img/bg-grid.png);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
   .fp-viewing-about .page-bg-cover,
 .fp-viewing-home .page-bg-cover,
 .fp-viewing-prizes .page-bg-cover,
@@ -3325,11 +3325,12 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .hoverimg img {
-    width: 40vw;
-    height: 8vw;
+    width: 70vw;
+    height: 27vw;
     max-width: 45vw;
     padding: 8px;
     margin: 8px;
+    display: block;
   }
 }
 
@@ -3821,3 +3822,8 @@ a:hover {
   gap:20px;
 }
 
+@media screen and (max-width: 769px) {
+ .contactcards {
+    display: block;
+  }
+}
