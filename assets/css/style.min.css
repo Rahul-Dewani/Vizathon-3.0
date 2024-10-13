@@ -3323,7 +3323,7 @@ h4 {
   box-shadow: 8px 8px 20px #2b90f4;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .hoverimg img {
     width: 40vw;
     height: 8vw;
@@ -3331,7 +3331,7 @@ h4 {
     padding: 8px;
     margin: 8px;
   }
-}
+} */
 
 @media screen and (max-width: 576px) {
   .hoverimg img {
