@@ -3809,15 +3809,44 @@ a:hover {
   }
 }
 
-.contactcard{
-  gap:20px;
-  width:400px;
-  padding:18px;
+.contactcards {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of cards */
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 70px; /* Space between cards */
+  margin-right: 40px;
+  
 }
 
-.contactcards{
-  margin:auto;
-  display: flex;
-  gap:20px;
+.contactcard {
+  width: 350px; /* Fixed width for larger screens */
+  padding: 10px;
+  border: 1px solid #ddd; /* Optional: Add a border for styling */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-height: 250px; /* Limit the height of the cards */
+  overflow: hidden; /* Hide overflow to prevent cut-off content */
+}
+
+.text-blue {
+  color: #4478d8;
+}
+
+@media only screen and (max-width: 768px) {
+  .contactcard {
+    width: 90%; /* Adjust width for better alignment on tablets */
+    max-height: none; /* Allow height to grow naturally */
+    margin-bottom: -20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contactcard {
+    width: 100%; /* Full width on mobile screens */
+    margin-bottom: -30px; /* Add space between cards */
+    max-height: none; /* Allow height to grow naturally */
+  }
 }
 
