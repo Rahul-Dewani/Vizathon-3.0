@@ -3859,3 +3859,13 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .sponsor-text{
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sponsor-text2{
+    font-size: 20px;
+  }
+}

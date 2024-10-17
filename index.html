@@ -10,16 +10,26 @@
     gtag("js", new Date());
     gtag("config", "UA-154962788-1");
   </script>
-  <script>
-    window.addEventListener('load', function() {
-    // Check if the current location hash is not '#home'
-    if (window.location.hash !== '#home') {
-        // Set the hash to '#home' to navigate to the home section
-        window.location.hash = '#home';
-    }
-});
 
+
+
+<script>
+  window.onload=function(){
+    document.querySelector('.scrollTarget').scrollIntoView({behaviour: 'smooth'})
+  }
+  window.addEventListener('load', function() {
+      // Set the hash to '#home' to navigate to the home section if it's not already set
+      if (window.location.hash !== '#home') {
+          window.location.hash = '#home';
+      }
+      
+      // Scroll the page down by 40 pixels from the current position
+      window.scrollBy(0, 40);
+  });
 </script>
+
+
+
   <title>VizAThon3.0</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -181,7 +191,7 @@
       <div class="section-wrapper center-vh dir-col">
         <div class="section-content anim mt-80">
           <div class="title-desc">
-            <img class="logo" style="width: 215px; height: 60px; margin-top: -40px; border: 1px solid white;"
+            <img class="logo scrollTarget" style="width: 215px; height: 60px; margin-top: -40px; border: 1px solid white;"
               src="./assets/img/vizlogov1.png" alt="Event Logo" />
             <div class="event">
               <h4 class="date">21st - 24th October 2024</h4>
@@ -272,7 +282,7 @@
 
             </div>
             <div class="sponsor">
-              <p class="text" style="margin: -10px;">In Collaboration With:<p class="text" style="margin-bottom:-20px; margin-top:0; font-size: 27px;">Next<span style="color:#f00">Gen</span> Education Foundation</p></p>
+              <p class="text sponsor-text" style="margin: -10px;">In Collaboration With:<p class="text sponsor-text2" style=" margin-bottom:-20px; margin-top:0; font-size: 27px;">Next<span style="color:#f00">Gen</span> Education Foundation</p></p>
               <img class="logo" src="./assets/img/NXT123.png" alt="Sponsor Logo"
                 style="height: 145px; width: 145px; margin-bottom: -15px; margin-top: 15px; " />
             </div>
@@ -281,7 +291,7 @@
               <h6 class="anim-3">Where Data becomes Art in the ultimate visualization experience!</h6>
             </div>
           </div>
-          <div class="col-12 justify-content-center title-desc">
+          <div class="col-12 justify-content-center title-desc" style="margin-top: 20px;">
             <a href="https://learner.vierp.in/events" target="_blank">
               <button id="devfolio-apply-now">Register Now</button>
             </a>
@@ -318,7 +328,7 @@
 
     </div>
 
-    <div class="section section-description fp-auto-height-responsive sec2 fp-section anim" data-section="about"
+    <div class="section section-description fp-auto-height-responsive sec2 fp-section anim" style="margin-top: 20px;" data-section="about"
       data-anchor="about">
       <div class="section-wrapper fullwidth center-vh dir-col anim">
         <div class="section-title text-center">
@@ -440,7 +450,7 @@
       </div>
     </div>-->
 
-    <div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
+    <div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely" style="margin-top: 20px;"
       data-section="prizes" data-anchor="prizes">
       <div class="section-wrapper center-vh dir-col anim">
         <div class="anim-2">
@@ -479,7 +489,7 @@
         </div>
       </div>
     </div>
-    <div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
+    <div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely" style="margin-top: 20px;"
       data-section="specials" data-anchor="specials">
       <div class="section-wrapper center-vh dir-col anim">
         <div class="anim-2">
@@ -611,7 +621,7 @@
         </div>
       </div>
       <a href="https://learner.vierp.in/events" target="_blank">
-<button class="cssbuttons-io-button" >
+<button class="cssbuttons-io-button" style="margin-top: 20px;" >
  Register Here
   <div class="icon">
     <svg
