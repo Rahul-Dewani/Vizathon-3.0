@@ -291,11 +291,24 @@
               <h6 class="anim-3">Where Data becomes Art in the ultimate visualization experience!</h6>
             </div>
           </div>
+          <!--<div class="col-12 justify-content-center title-desc" style="margin-top: 20px;">
+            <a href="https://learner.vierp.in/events" target="_blank" >
+              <button id="devfolio-apply-now" >Register Closed</button>
+            </a>
+          </div>-->
           <div class="col-12 justify-content-center title-desc" style="margin-top: 20px;">
-            <a href="https://learner.vierp.in/events" target="_blank">
-              <button id="devfolio-apply-now">Register Now</button>
+            <a href="https://learner.vierp.in/events" target="_blank" onclick="disableLink(event)">
+              <button id="devfolio-apply-now" disabled>Registration Closed</button>
             </a>
           </div>
+          
+          <script>
+            function disableLink(event) {
+              event.preventDefault(); // Prevents the link from opening
+              alert("Due to maximum entries, registration is closed.");
+            }
+          </script>
+          
         </div>
         <!-- <div class="col-12 title-desc mt-5">
             <h3 style="font-size: 36px; color: #3a88f3; font-weight: bold">
@@ -513,8 +526,8 @@
               <div class="col-12 col-sm-6 col-md-4">
                 <div class="prizecard">
                   <img src="./assets/img/Register-end.png" class="prize-icon" />
-                  <p class="title"><span class="date">20th Oct</span>
-                    <span class="time">05:00 PM</span>
+                  <p class="title"><span class="date">Closed</span>
+                    <span class="time">19oct 10 am</span>
                   </p>
                   <p class="text">
                     The schedule will be shared with you. Stay tuned for updates.
@@ -620,9 +633,9 @@
           </ul>
         </div>
       </div>
-      <a href="https://learner.vierp.in/events" target="_blank">
+      <a href="" target="_self">
 <button class="cssbuttons-io-button" style="margin-top: 20px;" >
- Register Here
+ Registration Closed
   <div class="icon">
     <svg
       height="24"
